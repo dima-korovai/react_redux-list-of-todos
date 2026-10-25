@@ -30,7 +30,7 @@ export const TodoFilter: React.FC = () => {
             }
             data-cy="statusSelect"
           >
-            <option>All</option>
+            <option value="all">All</option>
             <option value="active">Active</option>
             <option value="completed">Completed</option>
           </select>
@@ -59,7 +59,6 @@ export const TodoFilter: React.FC = () => {
               className="delete"
               onClick={() => {
                 setSearchValue('');
-                setStatus('all' as Status);
               }}
             />
           )}
